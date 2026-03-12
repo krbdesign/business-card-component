@@ -5,14 +5,18 @@
     /* border: 1px solid blue; */
     }
 
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
-    background-color: rgb(106, 126, 88);
-    background-image: url('assets/background.png');
+    background-color: rgb(89, 103, 76);
+    background-image: url('assets/NewBG.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
-/* the main card container */
 
 .card{
   width: 441px;
@@ -24,8 +28,19 @@ body {
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:rgb(182, 230, 165);
+  background-color:rgb(197, 227, 177);
   border-radius: 30px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 120px);
+  background-color: #486048;
+  transform: translateX(-50%);
 }
 
 h1{
@@ -33,10 +48,10 @@ h1{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   text-align: left;
-  font-size: 32px;
+  font-size: 30px;
   position: relative; top: 100px;
   padding-left: 20px;
-  color: #698069;
+  color: #486048;
   
 }
 
@@ -45,15 +60,106 @@ h2{
   padding-top: 0px;
   font-family: 'Playfair Display', serif;
   font-weight: 150;
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   position: relative; 
-  padding-left: 45px;
+  padding-left: 40px;
   top: 95px;
-  color: #698069;
-} 
+  color: #486048;
+}
 
-/* specific styling to scale elements down for mobile */
+.social-media {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.social-media a {
+  display: flex;
+  color: #486048;
+  text-decoration: none;
+  position: absolute;
+}
+
+.social-media a:nth-child(1) {
+  top: 37px;
+  right: 140px;
+}
+
+.social-media a:nth-child(2) {
+  top: 48px;
+  right: 70px;
+  transform: translateY(-50%);
+}
+
+.social-media a:nth-child(3) {
+  bottom: 145px;
+  right: 108px;
+  
+}
+
+.social-media svg {
+  width: 32px;
+  height: 32px;
+  color: #486048;
+  fill: currentColor;
+  stroke: currentColor;
+  filter: url(#inner-shadow);
+}
+
+
+.link-icon {
+  stroke-width: 1;
+}
+
+.ig-icon {
+  transform: scale(1.2);
+}
+
+.ig-icon:hover,
+.gmail-icon:hover,
+.link-icon:hover {
+  fill: #6d855b;
+  scale: 1.2;
+}
+
+.vine {
+  position: absolute;
+  opacity: 0.7;
+  filter: url(#inner-shadow);
+}
+
+.vine-1 {
+  width: 250px;
+  height: 250px;
+  top: 115px;
+  right: 6px;
+  transform: reflectX(1);
+}
+
+.vine-2 {
+  width: 250px;
+  height: 250px;
+  top: -110px;
+  left: 8px;
+  transform: rotate(180deg);
+}
+.vine-3 {
+  width: 250px;
+  height: 250px;
+  top: 115px;
+  left: 6px;
+  transform: scaleX(-1);
+}
+
+.vine-4 {
+  width: 250px;
+  height: 250px;
+  top: -110px;
+  right: 4px;
+  transform: scaleY(-1);
+}
+
 @media only screen and (max-width: 900px) {
   .card{
     width: 390px;
@@ -75,19 +181,4 @@ h2{
     top: 20px;
   }
   
-  .social-media {
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.icon {
-    width: 16px;
-    height: 16px;
-}
-
 }
