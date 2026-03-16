@@ -1,6 +1,9 @@
 ## Digital Business Card
-This was my first time using HTML and CSS in my Web Typography course at UMass Dartmouth
+This was my first time using HTML and CSS in my Web Typography course at UMass Dartmouth. Prior to this course, I have never really thought about my personal brand or how I wanted it to look.
 
 ## Process
 
-High fidelity mockups for the design of the business card website were made in Figma prior to starting the code for it.
+High fidelity mockups for the design of the business card website were made in Figma prior to starting the code HTML and CSS. I used Playfair Display as my font for a simple look, and I used free icons from the internet as the way for people to access my contact info/social media to make it easy for users to understand where to find my information. After creating the mockup, I started to code in HTML and CSS to recreate what I had envisioned for my digital business card. In HTML, I created the h1, h2, and h3 for my card while also including the three social media svgs and the vine svg as well. In CSS, I added the colors for the card itself and the text/icons within it, and I added an image to the background of the website similar to the vine icons on the card. I also had to find a favicon for my website and upload that into HTML after finishing CSS up Once all of my HTML and CSS codes came out visually, I added final touches and completed/published my website.
+
+## Goals
+My main goal while making my digial business card was to show the viewers my overall "vibe" aesthetically. I am someone who is very interested in nature and colors found in nature, so a lot of projects I've worked on in the past would be revolved around those aesthetics. I also wanted to show that I am a very simple designer by using a limited color palette and by keeping a decent amount of negative space within my card, only including the necessary information and no unnecessary visuals. Most of my works have revolved around nature in some way, and I want viewers to understand my love for nature and how it may relate to the works I create. From the beginning, I wanted to center my theme around vines, as they are very fluid and draw attention from one end to the other making them visually appealing while also tying into the nature theme I hoped for.
